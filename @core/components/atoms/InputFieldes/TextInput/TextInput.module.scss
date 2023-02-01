@@ -1,0 +1,26 @@
+@use '../../../../themes/' as * ;
+
+.input{
+    display: block;
+    outline: none;
+   
+}
+
+.search{
+  
+    border: none;
+    width: 35vw;
+   
+}
+
+.signin{
+    width: 25vw;
+    padding:7px 5px;
+    border-radius: 3px;
+    border: 1px solid clr(grey,300);
+    font:$body_medium_1;
+
+    &:focus{
+        background-color:clr(blue,500);
+    }
+}
