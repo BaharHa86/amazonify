@@ -1,0 +1,22 @@
+@use '../../../../themes/' as * ;
+
+.product_slider{
+    width: 400px;
+}
+
+
+.product_slider_images{
+ gap: 7px;
+}
+
+.product_slider_image{
+    border: 1px solid clr(grey,300);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 3px;
+   
+
+    &:hover{
+        box-shadow: 0 0 5px clr(blue,200);
+    }
+}
