@@ -1,0 +1,18 @@
+@use '../../../../themes/' as * ;
+
+.create_new{
+    border-top: 1px solid clr(white,800);
+    width: 360px;
+    position: relative;
+    padding: 20px;
+
+}
+
+.text{
+    color: clr(grey,800);
+    background-color: clr(white);
+    position: absolute;
+    top:-7px;
+    width: 130px;
+    text-align: center;
+}
