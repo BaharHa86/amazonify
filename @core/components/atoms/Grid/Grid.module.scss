@@ -1,0 +1,22 @@
+@use '../../../themes/' as * ;
+
+
+.grid{
+    display: grid;
+}
+
+.col_4{
+    grid-template-columns: repeat( 4, 290px);
+    gap: 20px;
+    justify-content:center;
+    align-content: center;
+ 
+ 
+}
+ 
+.col_3{
+    grid-template-columns: repeat(3,350px);
+    gap: 40px;
+    justify-content:center;
+    align-content: center;
+}
