@@ -1,0 +1,22 @@
+@use '../../../../themes/' as * ;
+
+.bottom_footer{
+    background-color: clr(black,400);
+    color: clr(gray);
+    height: 15vh;
+}
+.bottom_footer_box{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    gap: 18px;
+    
+}
+.link{
+   
+     font: $body_small_1;
+
+     &:hover{
+        text-decoration: underline;
+     }
+   }
