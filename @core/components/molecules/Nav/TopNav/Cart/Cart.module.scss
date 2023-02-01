@@ -1,0 +1,13 @@
+ @use '../../../../../themes/' as * ;
+ 
+ .cart_box{
+    position: relative;
+ }
+ 
+ 
+ .cart_quantity{
+    color: clr(orange,100);
+    position: absolute;
+    top:-2px;
+    right: -10px;
+ }

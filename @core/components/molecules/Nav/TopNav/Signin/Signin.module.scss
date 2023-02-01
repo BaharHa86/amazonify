@@ -1,0 +1,27 @@
+@use '../../../../../themes/' as * ;
+
+.signin{
+    &:hover .signin_options_card, &:hover .signin_overlay{
+        display: block;
+      }
+}
+
+ 
+ 
+.signin_overlay{
+    top: 55px;
+    left: 0;
+    background-color: rgba(clr(black, 0) , 0.4) ;
+    &:hover{
+        display: none !important;
+      }
+
+}
+ 
+.signin_options_card{
+    right: 198px;
+    top: 53px;
+}
+.signout{
+    color: black;
+ }

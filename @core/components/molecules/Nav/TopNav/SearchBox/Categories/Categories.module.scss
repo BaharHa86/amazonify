@@ -1,0 +1,31 @@
+@use '../../../../../../themes/' as * ;
+
+.categories_box{
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: clr(white,500);
+    width:fit-content;
+    height: 3.2vw;
+    border-right:1px solid clr(grey,200) ;
+    border-radius:4px 0 0 4px;
+    overflow: hidden;
+    color: clr(grey,500);
+    &:hover{
+    background-color:clr(grey,150) ;
+    color: clr(black)
+  }
+   
+}
+
+
+.categories_icon{
+    color:inherit;
+    
+    &:hover{
+        color:inherit; 
+    }
+}
+
+
+ 

@@ -1,0 +1,13 @@
+
+@use '../../../themes/' as * ;
+
+.white{
+    color: clr(white);
+}
+
+.black{
+    color: clr(black);
+}
+.color{
+    color:clr(orange,0);
+}
