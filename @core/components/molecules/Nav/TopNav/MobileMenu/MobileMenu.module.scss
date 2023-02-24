@@ -1,7 +1,9 @@
 @use '../../../../../themes/' as *;
 
-.menu {
+.mobile_menu {
+  display: none;
+
   @media (max-width: $tablets) {
-    display: none;
+    display: block;
   }
 }

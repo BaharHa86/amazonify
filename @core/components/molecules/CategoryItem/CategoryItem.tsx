@@ -1,10 +1,11 @@
 import React from 'react';
+import Link from 'next/link';
+
 import Flex from '../../atoms/Flex/Flex';
 import Styles from './CategoryItem.module.scss';
 import LinkBox from '../../atoms/LinkBox/LinkBox';
 import Text from '../../atoms/Text/Text';
 import Image from 'next/image';
-import Link from 'next/link';
 
 interface CategoryItemProps {
   variant: 'simple' | 'wide';
@@ -12,14 +13,14 @@ interface CategoryItemProps {
   url?: string;
   images?: { _id: string; url: string }[];
   className?: string;
-  href?:string;
+  href?: string;
 }
 
 function CategoryItem({
   variant,
   title,
   url = '',
-  href='',
+  href = '',
   images,
   className,
 }: CategoryItemProps) {
@@ -29,9 +30,15 @@ function CategoryItem({
     return (
       <Flex variant="col_strt_cntr" className={classes}>
         <Text variant="H4">{title}</Text>
-        <Flex className={Styles.test}>
-          <Link href={href}>
-            <Image src={url} alt={title} width={250} height={300} />
+        <Flex variant="strt_cntr" className={Styles.simple_wrapper}>
+          <Link href={href} className={Styles.simple_wrapper_image}>
+            <Image
+              src={url}
+              alt={title}
+              className={Styles.simple_image}
+              fill
+              sizes="25vw"
+            />
           </Link>
         </Flex>
         <LinkBox>Shop now</LinkBox>

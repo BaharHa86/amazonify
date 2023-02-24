@@ -1,0 +1,11 @@
+@use '../../../../themes/' as *;
+
+.cart_header {
+  width: 80vw;
+  border-bottom: 1px solid clr(grey, 200);
+  margin-top: 40px;
+}
+
+.cart_header_title {
+  padding-bottom: 20px;
+}

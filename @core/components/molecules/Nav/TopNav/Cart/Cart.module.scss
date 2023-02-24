@@ -1,13 +1,24 @@
- @use '../../../../../themes/' as * ;
- 
- .cart_box{
-    position: relative;
- }
- 
- 
- .cart_quantity{
-    color: clr(orange,100);
-    position: absolute;
-    top:-2px;
-    right: -10px;
- }
+@use '../../../../../themes/' as *;
+
+.cart_box {
+  position: relative;
+}
+
+.cart_quantity {
+  color: clr(orange, 100);
+  position: absolute;
+  top: -4px;
+  right: 10px;
+
+  @media (max-width: $tablets) {
+    top: 0;
+    right: 10px;
+    font: $H3;
+  }
+}
+
+.cart_text {
+  @media (max-width: $tablets) {
+    display: none;
+  }
+}

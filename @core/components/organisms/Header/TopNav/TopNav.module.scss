@@ -1,0 +1,19 @@
+@use '../../../../themes/' as *;
+
+.top_nav {
+  background-color: clr(black, 300);
+  height: 9.5vh;
+  width: 100%;
+  padding: 0 5px;
+
+  @media (max-width: $tablets) {
+    justify-content: space-between;
+    background-color: clr(blue, 400);
+  }
+}
+
+.searchbox {
+  @media (max-width: $tablets) {
+    display: none;
+  }
+}

@@ -1,10 +1,11 @@
-@use '../../../../../themes/' as * ;
+@use '../../../../../themes/' as *;
 
-.deliver{
-    color:clr(grey,150);
+.deliver {
+  color: clr(grey, 150);
 }
- 
 
-
-
- 
+@media (max-width: $tablets) {
+  .location {
+    display: none;
+  }
+}

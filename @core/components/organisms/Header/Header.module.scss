@@ -1,0 +1,17 @@
+@use '../../../themes/' as *;
+
+.header {
+  width: 100%;
+  @media (max-width: $tablets) {
+    background-color: clr(blue, 400);
+  }
+}
+
+.searchbox {
+  display: none;
+  @media (max-width: $tablets) {
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+  }
+}

@@ -1,13 +1,15 @@
+@use '../../../themes/' as *;
 
-@use '../../../themes/' as * ;
-
-.white{
-    color: clr(white);
+.white {
+  color: clr(white);
+  @media (max-with: 600px) {
+    font-size: $H9;
+  }
 }
 
-.black{
-    color: clr(black);
+.black {
+  color: clr(black);
 }
-.color{
-    color:clr(orange,0);
+.color {
+  color: clr(orange, 0);
 }

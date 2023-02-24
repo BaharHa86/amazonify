@@ -1,22 +1,25 @@
 import React from 'react';
 
-import Text from '../../../../atoms/Text/Text';
-import Flex from '../../../../atoms/Flex/Flex';
+import { useAppSelector } from '../../../../../hook/hooks';
 
-import styles from './Cart.module.scss';
+import Text from '../../../../atoms/Text/Text';
+import Styles from './Cart.module.scss';
 import Icon from '../../../../atoms/Icon/Icon';
 import Button from '../../../../atoms/Button/Button';
 
 function Cart() {
+  const cartQuantity = useAppSelector((state) => state.cart.totalQuantity);
   return (
-    <Button variant="nav_button" href="">
-      <Flex className={styles.cart_box}>
-        <Text variant="H5" className={styles.cart_quantity}>
-          15
+    <Button variant="nav_button" href="/cart">
+      <div className={Styles.cart_box}>
+        <Text variant="H5" className={Styles.cart_quantity}>
+          {cartQuantity}
         </Text>
         <Icon variant="cart" />
-      </Flex>
-      <Text variant="H7">Cart</Text>
+      </div>
+      <Text variant="H7" className={Styles.cart_text}>
+        Cart
+      </Text>
     </Button>
   );
 }

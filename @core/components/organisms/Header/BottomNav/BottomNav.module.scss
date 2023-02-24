@@ -1,0 +1,15 @@
+@use '../../../../themes/' as *;
+
+.bottom_nav {
+  width: 100vw;
+  height: 6.5vh;
+  background-color: clr(blue, 400);
+  color: clr(white);
+  padding-left: 5px;
+  gap: 5px;
+
+  @media (max-width: $tablets) {
+    gap: 0;
+    height: 9.5vh;
+  }
+}

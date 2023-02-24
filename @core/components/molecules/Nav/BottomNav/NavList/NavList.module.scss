@@ -1,7 +1,12 @@
-.nav_list{
-    width: 70vw;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 3px;
+@use '../../../../../themes/' as *;
+
+.nav_list {
+  width: 70vw;
+  gap: 3px;
+
+  @media (max-width: $tablets) {
+    width: 100%;
+    margin: auto;
+    gap: 5px;
+  }
 }

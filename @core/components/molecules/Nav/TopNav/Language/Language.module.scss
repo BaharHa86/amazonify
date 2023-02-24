@@ -1,5 +1,7 @@
- .language_image{
- display: flex;
- justify-content: center;
- align-items: flex-end;
- }
+@use '../../../../../themes/' as *;
+
+.language {
+  @media (max-width: $tablets) {
+    display: none;
+  }
+}

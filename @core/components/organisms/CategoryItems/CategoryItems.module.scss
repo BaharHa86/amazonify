@@ -1,0 +1,49 @@
+@use '../../../themes/' as *;
+
+.main_wrapper {
+  padding: 0 20px;
+  width: 100%;
+  margin: 0 auto;
+
+  @media (max-width: $tablets) {
+    margin-top: 180px;
+  }
+  @media (max-width: $mobiles) {
+  }
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.first_section {
+  position: relative;
+  height: 650px;
+  margin-bottom: 30px;
+  width: 100%;
+
+  @media (max-width: $tablets) {
+    height: 1060px;
+  }
+  @media (max-width: $mobiles) {
+    height: 2380px;
+  }
+}
+
+.categoryItems {
+  position: absolute;
+  top: -203px;
+  z-index: 30;
+  width: 100%;
+
+  @media (max-width: $tablets) {
+    top: -190px;
+  }
+  @media (max-width: $mobiles) {
+    top: -150px;
+  }
+}
+
+.wide {
+  gap: 20px;
+}
