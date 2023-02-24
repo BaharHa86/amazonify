@@ -1,8 +1,9 @@
 import React from 'react';
+
 import styles from './Overlay.module.scss';
 
 interface OvelayProps extends React.AllHTMLAttributes<HTMLDivElement> {
- variant:'signin' | 'slider';
+  variant: 'signin' | 'slider';
 }
 
 function Overlay({ className, variant }: OvelayProps) {

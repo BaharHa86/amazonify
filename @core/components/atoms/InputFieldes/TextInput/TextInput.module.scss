@@ -1,26 +1,49 @@
-@use '../../../../themes/' as * ;
+@use '../../../../themes/' as *;
 
-.input{
-    display: block;
-    outline: none;
-   
+.input {
+  display: block;
+  outline: none;
 }
 
-.search{
-  
-    border: none;
-    width: 35vw;
-   
-}
-
-.signin{
+.search {
+  padding: 5px 10px;
+  border: none;
+  width: 35vw;
+  font: $body_large_2;
+  @media (max-width: $laptops) {
     width: 25vw;
-    padding:7px 5px;
-    border-radius: 3px;
-    border: 1px solid clr(grey,300);
-    font:$body_medium_1;
+  }
+  @media (max-width: $tablets) {
+    width: 85vw;
+    height: 8vh;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+}
 
-    &:focus{
-        background-color:clr(blue,500);
-    }
+.signin {
+  width: 25vw;
+  padding: 7px 5px;
+  border-radius: 3px;
+  border: 1px solid clr(grey, 300);
+  font: $body_medium_1;
+
+  &:focus {
+    background-color: clr(blue, 500);
+  }
+  @media (max-width: $tablets) {
+    width: 35vw;
+  }
+  @media (max-width: $mobiles) {
+    width: 60vw;
+  }
+}
+
+.cart {
+  width: 45px;
+  height: 30px;
+  @media (max-width: $mobiles) {
+    width: 25px;
+    height: 25px;
+  }
 }

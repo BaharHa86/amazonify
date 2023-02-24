@@ -1,87 +1,138 @@
-@use '../../../themes/' as * ;
+@use '../../../themes/' as *;
 
-.btn{
-    border: none;
-    cursor: pointer;
+.btn {
+  border: none;
+  cursor: pointer;
 }
 
-.nav_button{
-    background-color:transparent;
-    display: flex;
-    justify-content:space-around;
-    align-items:flex-end;
-    padding: 5px 5px;
-    height:8.5vh;
-    
-   
-    color: clr(white);
-&:hover{
-            border: 1px solid clr(white);
-            border-radius: 2px;
-           
-          } 
+.nav_button {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding: 5px 5px;
+  height: 8.5vh;
+  width: fit-content;
 
-}
+  color: clr(white);
+  &:hover {
+    border: 1px solid clr(white);
+    border-radius: 2px;
+  }
 
-.search{
-    width: 3.5vw;
-    background-color:clr(yellow,100);
-    overflow: hidden;
-    border-radius:0 4px 4px 0;
-    display: flex;
-    align-items: center;
+  @media (max-width: $tablets) {
     justify-content: center;
-  
- }
-
-.back_to_top{
-    background-color: clr(blue,300);
-    width: 100%;
-    height: 7vh;
+    align-items: center;
+  }
 }
 
+.search {
+  width: 3.5vw;
+  background-color: clr(yellow, 100);
+  overflow: hidden;
+  border-radius: 0 4px 4px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-.signin{
-    background:linear-gradient(to top,clr(yellow,50) , clr(yellow) );
-    border: 1.2px solid clr(orange,700);
-    border-radius: 3px;
-    font-size: 14px;
-    width: 25vw;
-    padding: 7px 6px;
-    font:$body_medium_2;
-    color: clr(black);
-    
+  @media (max-width: $tablets) {
+    width: 10vw;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
 }
- 
- .create_new{
-    background:linear-gradient(to top,clr(white,950) , clr(white,50) );  
-    border: 1.2px solid clr(grey,700);
-    border-radius: 3px;
-    font-size: 14px;
-    width: 28.5vw;
-    padding: 7px 6px;
-    font:$body_medium_2;
-    color: clr(black);
- }
 
+.back_to_top {
+  background-color: clr(blue, 300);
+  width: 100%;
+  height: 7vh;
+}
 
- .add_to_cart{
-    background-color: clr(yellow,500);
-    font: $body_medium_1;
-    width: 16vw;
-    padding: 8px;
-    border-radius: 20px;
- }
- 
- 
- 
- 
- .buy_now{
-    background-color: clr(yellow,200);
-    font: $body_medium_1;
-    padding: 5px 10px;
-    width: 16vw;
-    padding: 8px;
-    border-radius: 20px;
- }
- 
+.signin {
+  background: linear-gradient(to top, clr(yellow, 50), clr(yellow));
+  border: 1.2px solid clr(orange, 700);
+  border-radius: 3px;
+  font-size: 14px;
+  width: 25vw;
+  padding: 7px 6px;
+  font: $body_medium_2;
+  color: clr(black);
+
+  @media (max-width: $tablets) {
+    width: 35vw;
+  }
+
+  @media (max-width: $mobiles) {
+    width: 60vw;
+  }
+}
+
+.create_new {
+  background: linear-gradient(to top, clr(white, 950), clr(white, 50));
+  border: 1.2px solid clr(grey, 700);
+  border-radius: 3px;
+  font-size: 14px;
+  width: 30vw;
+  padding: 7px 6px;
+  font: $body_medium_2;
+  color: clr(black);
+
+  @media (max-width: $tablets) {
+    width: 40vw;
+  }
+
+  @media (max-width: $mobiles) {
+    width: 72vw;
+  }
+}
+
+.add_to_cart {
+  background-color: clr(yellow, 500);
+  font: $body_medium_1;
+  width: 16vw;
+  padding: 8px;
+  border-radius: 20px;
+  @media (max-width: $tablets) {
+    width: 30vw;
+  }
+}
+
+.buy_now {
+  background-color: clr(yellow, 200);
+  font: $body_medium_1;
+  padding: 5px 10px;
+  width: 16vw;
+  padding: 8px;
+  border-radius: 20px;
+
+  @media (max-width: $tablets) {
+    width: 30vw;
+  }
+}
+.delete_cart {
+  background-color: clr(yellow, 500);
+  font: $body_medium_1;
+  width: 120px;
+  padding: 8px;
+  border-radius: 20px;
+  @media (max-width: $tablets) {
+    width: 90px;
+    padding: 6px;
+  }
+
+  @media (max-width: $mobiles) {
+    width: 70px;
+    padding: 4px;
+  }
+}
+
+.signout {
+  background: linear-gradient(to top, clr(yellow, 50), clr(yellow));
+  border: 1.2px solid clr(orange, 700);
+  border-radius: 3px;
+  font: $body_medium_1;
+  width: 8vw;
+  padding: 7px 6px;
+  font: $body_medium_2;
+  color: clr(black);
+}

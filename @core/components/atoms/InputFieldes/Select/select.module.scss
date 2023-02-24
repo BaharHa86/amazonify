@@ -1,29 +1,27 @@
-@use '../../../../themes/' as * ;
+@use '../../../../themes/' as *;
 
-.select{
-    appearance: none;
-    cursor: pointer;
-    outline: none;
-    border: none;
+.select {
+  appearance: none;
+  cursor: pointer;
+  outline: none;
+  border: none;
 }
 
- 
-.search{
-    background-color: transparent;
-    color:inherit;
-    width: 3vw;
-    max-width:fit-content;
-    padding: .5rem;
-    border-radius: 2px;
-    overflow: hidden;
-    font: $body-medium-2;
+.search {
+  background-color: transparent;
+  color: inherit;
+  width: 3vw;
+  max-width: fit-content;
+  padding: 0.5rem;
+  border-radius: 2px;
+  overflow: hidden;
+  font: $body-medium-2;
 
-    &:hover{
-        color:inherit; 
-    }
-   
-    & option {
-      color: clr(black);
-    }
-   
+  &:hover {
+    color: inherit;
+  }
+
+  & option {
+    color: clr(black);
+  }
 }

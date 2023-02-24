@@ -1,24 +1,24 @@
 @use '../../../themes/' as *;
 
-
-.signin{
-   
-    position:fixed;
-    z-index: 20;
-    width: 100%;
-    height: 100%;
-    display: none;
-
-   
+.signin {
+  position: fixed;
+  z-index: 50;
+  width: 100%;
+  height: 100%;
+  display: none;
+  top: 55px;
+  left: 0;
+  background-color: rgba(clr(black, 0), 0.4);
+  &:hover {
+    display: none !important;
+  }
 }
 
-.slider{
-    position: absolute;
-    width: 100%;
-    height:8rem;
-    background: linear-gradient(to top,clr(white,900) , transparent);
-    bottom: 0;
-    z-index:20;
+.slider {
+  position: absolute;
+  width: 100%;
+  height: 8rem;
+  background: linear-gradient(to top, clr(white, 900), transparent);
+  bottom: 0;
+  z-index: 20;
 }
-
- 

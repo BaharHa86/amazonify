@@ -1,29 +1,34 @@
-@use '../../../themes/' as * ;
+@use '../../../themes/' as *;
 
-.link_box{
-    cursor: pointer;
+.link_box {
+  cursor: pointer;
 }
- .nav_link{
-    background-color:transparent;
-    display: flex;
-    justify-content:center;
-    align-items:center;
-    padding: 5px 10px;
-    height: 80%;
-    color: clr(white);
-    font:$body_medium_1;
-    &:hover{
-            border: 1px solid clr(white);
-            border-radius: 2px;
-           
-          } 
- }
+.nav_link {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  height: 80%;
+  color: clr(white);
+  font: $body_medium_1;
+  &:hover {
+    border: 1px solid clr(white);
+    border-radius: 2px;
+  }
+  @media (max-width: $tablets) {
+    padding: 1px 5px;
+  }
+  @media (max-width: $mobiles) {
+    padding: 2px;
+  }
+}
 
-.slider_link{
+.slider_link {
   display: block;
 }
 
-.signin_condition{
-  color: clr(blue,);
+.signin_condition {
+  color: clr(blue);
   font: inherit;
 }

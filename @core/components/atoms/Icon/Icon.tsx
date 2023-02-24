@@ -1,13 +1,14 @@
 import React from 'react';
-import styles from './Icon.module.scss';
 
 import { CgShoppingCart } from 'react-icons/cg';
+import { IoPersonOutline } from 'react-icons/io5';
 import { RxTriangleDown, RxTriangleRight } from 'react-icons/rx';
 import { TiLocationOutline } from 'react-icons/ti';
 import { TbSearch } from 'react-icons/tb';
 import { FiMenu } from 'react-icons/fi';
-import {IoMdStar, IoMdStarOutline, IoMdStarHalf} from 'react-icons/io'; 
- 
+import { IoMdStar, IoMdStarOutline, IoMdStarHalf } from 'react-icons/io';
+
+import styles from './Icon.module.scss';
 
 interface IconProps {
   variant:
@@ -19,7 +20,8 @@ interface IconProps {
     | 'menu'
     | 'star'
     | 'star_outline'
-    | 'star_half';
+    | 'star_half'
+    | 'signin';
   className?: string;
 }
 
@@ -56,6 +58,10 @@ function Icon({ variant, className }: IconProps) {
       break;
     case 'star_half':
       return <IoMdStarHalf className={classes} />;
+      break;
+
+    case 'signin':
+      return <IoPersonOutline className={classes} />;
       break;
   }
 }

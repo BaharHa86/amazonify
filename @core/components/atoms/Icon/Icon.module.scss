@@ -1,45 +1,48 @@
-@use '../../../themes/' as * ;
+@use '../../../themes/' as *;
 
-.location{
-    font: $H4;
-    color:clr(white);
-    
+.location {
+  font: $H4;
+  color: clr(white);
 }
 
-.search{
-    font: $H2;
-    color:clr(grey,700);
+.search {
+  font: $H1;
+  color: clr(black);
 }
 
-
-.tr_down{
-   font:$H6;
-    color:clr(grey,300);
+.tr_down {
+  font: $H6;
+  color: clr(grey, 300);
 }
 
-.cart{
-    font:normal 700 38px 'Amazon Ember';
+.cart {
+  font: normal 700 38px 'Amazon Ember';
 }
 
-.menu{
-    font:$H2;
+.menu {
+  font: $H2;
+  color: clr(white);
+
+  @media (max-width: $tablets) {
+    font: $H1;
+    margin-top: 6px;
+  }
 }
 
-.star{
-    color: clr(yellow,200);
-    font:$H4;
-    
+.star {
+  color: clr(yellow, 200);
+  font: $H4;
 }
-.star_outline{
-    color: clr(yellow,200);
-    font:$H4;
- 
+.star_outline {
+  color: clr(yellow, 200);
+  font: $H4;
 }
-.star_half{
-    color: clr(yellow,200);
-    font:$H4;
- 
+.star_half {
+  color: clr(yellow, 200);
+  font: $H4;
 }
 
-
- 
+.signin {
+  font: $H1;
+  margin-bottom: 5px;
+}
