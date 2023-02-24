@@ -1,32 +1,55 @@
-import Link from 'next/link';
 import React from 'react';
+
+import { signOut, useSession } from 'next-auth/react';
+import { removeCookie } from 'typescript-cookie';
+
 import Icon from '../../../../atoms/Icon/Icon';
 import Text from '../../../../atoms/Text/Text';
 import Flex from '../../../../atoms/Flex/Flex';
-
 import OptionsCard from '../../../../atoms/OptionsCard/OptionsCard';
 import Overlay from '../../../../atoms/Overlay/Overlay';
-import styles from './Signin.module.scss';
+import Styles from './Signin.module.scss';
 import Button from '../../../../atoms/Button/Button';
 
 function Signin() {
-  return (
-    <Button variant="nav_button" href="/signin" className={styles.signin}>
-      <Flex variant="col_strt_cntr">
-        <Text variant="body_small_1">Hello,sign in</Text>
-        <Text variant="H7">Account & Lists</Text>
-      </Flex>
-      <Icon variant="tr_down" />
+  const { status, data: session } = useSession();
 
+  const logoutHandler = () => {
+    removeCookie('cart');
+    signOut({ callbackUrl: '/signin' });
+  };
+  return (
+    <div className={Styles.signin}>
+      <Button variant="nav_button" href="/signin">
+        <Flex variant="col_strt_cntr">
+          <Text variant="body_small_1">
+            {`Hello,
+        ${
+          status === 'loading'
+            ? 'Loading'
+            : session?.user
+            ? session.user.name
+            : 'sign in'
+        }`}
+          </Text>
+          <Text variant="H7">Account & Lists</Text>
+        </Flex>
+        <Icon variant="tr_down" />
+      </Button>
       <Flex>
-        <Overlay variant="signin" className={styles.signin_overlay} />
-        <OptionsCard className={styles.signin_options_card}>
-          <Link href="/signin" className={styles.signout}>
+        <Overlay variant="signin" className={Styles.signin_overlay} />
+        <OptionsCard variant="signin" className={Styles.signin_options_card}>
+          <Button
+            type="button"
+            variant="signout"
+            href="#"
+            onClick={logoutHandler}
+          >
             Sign Out
-          </Link>
+          </Button>
         </OptionsCard>
       </Flex>
-    </Button>
+    </div>
   );
 }
 

@@ -1,35 +1,31 @@
-@use '../../../../themes/'  as *;
+@use '../../../../themes/' as *;
 
-.item_card_outer{
-    width:100%;
-    gap: 20px;
-    border: 1px solid clr(white,400);
-   
+.item_card_outer {
+  width: 100%;
+  gap: 20px;
+  border: 1px solid clr(white, 400);
 }
-.item_card_image{
-    width: 100%;
-    background-color: clr(white,300);
- 
-  
+.item_card_image {
+  width: 100%;
+  background-color: clr(white, 300);
+  padding: 5px 0;
 }
-.item_card_inner{
+.item_card_inner {
   padding-left: 10px;
-  gap: 10px;
-   
+
+  height: 25vh;
 }
-.item_card_desc{
-    width: 290px;
-    height:auto;
-    overflow: hidden;
-    white-space:normal;
-    text-overflow: ellipsis;
-    display: -webkit-box !important;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient:vertical;
-    -webkit-box-direction: normal;
-    line-height: 25px;
-   -webkit-text-size-adjust: 100%;
-   
-  
- 
+.item_card_desc {
+  width: 290px;
+  height: auto;
+  overflow: hidden;
+  white-space: normal;
+  text-overflow: ellipsis;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  line-height: 25px;
+  -webkit-text-size-adjust: 100%;
+  color: clr(black, 100);
 }

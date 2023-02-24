@@ -1,22 +1,43 @@
-@use '../../../../themes/' as * ;
+@use '../../../../themes/' as *;
 
-.product_slider{
-    width: 400px;
+.product_slider {
+  width: 28vw;
+  gap: 20px;
+  @media (max-width: $tablets) {
+    width: 50vw;
+  }
+
+  @media (max-width: $mobiles) {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
 }
 
-
-.product_slider_images{
- gap: 7px;
+.product_slider_images_container {
+  gap: 7px;
+  @media (max-width: $tablets) {
+  }
+  @media (max-width: $mobiles) {
+    flex-direction: row;
+    gap: 5px;
+  }
 }
 
-.product_slider_image{
-    border: 1px solid clr(grey,300);
-    border-radius: 10px;
-    overflow: hidden;
-    padding: 3px;
-   
+.product_slider_images {
+  border: 1px solid clr(grey, 300);
+  border-radius: 5px;
+  overflow: hidden;
 
-    &:hover{
-        box-shadow: 0 0 5px clr(blue,200);
-    }
+  &:hover {
+    box-shadow: 0 0 3px 2px clr(yellow, 400);
+  }
+}
+
+.product_slider_image_small {
+  border-radius: 5px;
+
+  @media (max-width: $mobiles) {
+    width: 30px;
+    height: 30px;
+  }
 }

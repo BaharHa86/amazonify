@@ -1,21 +1,28 @@
-.product{
- 
+@use '../../../../themes/' as *;
+
+.product {
+  @media (max-width: $tablets) {
+    flex-direction: column;
+    gap: 30px;
+  }
+  @media (max-width: $mobiles) {
+  }
 }
 
-
-
-.product_detail{
-    gap: 20px;
+.product_detail {
+  width: 40vw;
+  @media (max-width: $tablets) {
+    width: auto;
+  }
 }
 
-
-
-.product_detail_desc{
-    width: 400px;
-     
-    
+.product_detail_desc {
+  width: 40vw;
+  @media (max-width: $tablets) {
+    width: 90vw;
+  }
 }
 
-.product_button{
-    gap: 10px;
+.product_button {
+  gap: 10px;
 }
