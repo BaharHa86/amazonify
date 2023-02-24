@@ -1,0 +1,8 @@
+@use '../../../themes/' as *;
+
+.cart {
+  width: 95vw;
+  min-height: 100vh;
+  background-color: clr(white);
+  margin: auto;
+}

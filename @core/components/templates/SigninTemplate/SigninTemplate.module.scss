@@ -1,0 +1,12 @@
+@use '../../../themes/' as *;
+
+.signin_template {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  background-color: clr(white);
+  gap: 20px;
+}
